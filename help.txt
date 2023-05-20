@@ -40,3 +40,10 @@ Section 9: Structuring the APP
 
 <aside></aside> to move things to the "side"
 <section></section> section off a portion
+
+Section 10: Building a Form
+<form></form> to create a form
+<input type="text"/> self-closing element
+<select></select> for a select element
+<option></option> should always have a value
+format: <option value="technology">Tech</option>
