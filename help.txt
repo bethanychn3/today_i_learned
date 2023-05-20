@@ -14,3 +14,20 @@ body is for inside the web
 Section 7: Working with Text & Lists
 <ul> stands for unordered list and creating a list in html
 <li> stands for list item -- put list items in 
+
+Section 8: Hyperlinks
+<a> means anchor
+<a href="link name"> is how to paste and show a hyperlink
+
+href and target are attributes of the target
+target="" causes the user to move to the url but stay on the same page
+target="_blank" causes the html to open a new tab
+
+image element
+- needs attributes
+- no closing type
+format: <img src="folder/logo.png"/>
+src is the path to the img in the file
+alt text is a textual description of whatever is in the image
+so the img can be read by screen readers
+format: alt="Some description"
