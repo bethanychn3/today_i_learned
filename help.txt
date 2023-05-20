@@ -47,3 +47,6 @@ Section 10: Building a Form
 <select></select> for a select element
 <option></option> should always have a value
 format: <option value="technology">Tech</option>
+
+Section 11: Adding Buttons
+<strong>bold</strong> will make the text bold
