@@ -15,7 +15,7 @@ Section 7: Working with Text & Lists
 <ul> stands for unordered list and creating a list in html
 <li> stands for list item -- put list items in 
 
-Section 8: Hyperlinks
+Section 8: Hyperlinks, Images, Attributes
 <a> means anchor
 <a href="link name"> is how to paste and show a hyperlink
 
@@ -31,3 +31,12 @@ src is the path to the img in the file
 alt text is a textual description of whatever is in the image
 so the img can be read by screen readers
 format: alt="Some description"
+
+Section 9: Structuring the APP
+<header></header> "boxes in" the elements and groups them together
+<main></main> same thing as above
+**BE CAREFUL WHERE TO PLACE THE OPENING AND CLOSING STATEMENTS**
+<button>text</button> will create a button left shifted
+
+<aside></aside> to move things to the "side"
+<section></section> section off a portion
