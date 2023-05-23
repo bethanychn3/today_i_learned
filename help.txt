@@ -75,3 +75,18 @@ function calcFactAge(year){
 }
 
 const age1 = calcFactAge(2015)
+
+Section 37: If Else STATEMENTS
+if(votesInteresting === votesMindblowing)
+{
+    alert("this fact is equally interesting and mindblowing");
+}
+else if (votesInteresting > votesMindblowing) {
+    console.log("Interesting Fact");
+}
+else {
+    console.log("something else");
+}
+
+falsy values: O, "", null, undefined
+truthy value: everything else

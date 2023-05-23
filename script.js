@@ -12,3 +12,11 @@ btn.addEventListener("click", function () {
     btn.textContent = "Share a Fact";
   }
 });
+
+function calcFactAge(year) {
+  const currentYear = new Date().getFullYear();
+  const age = currentYear - year;
+
+  if (age >= 0) return age;
+  else return "Impossible Year";
+}
