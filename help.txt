@@ -50,3 +50,28 @@ format: <option value="technology">Tech</option>
 
 Section 11: Adding Buttons
 <strong>bold</strong> will make the text bold
+
+Section 35: Values, Variables, and Operators
+let votesInteresting = 23;
+let votesMindblowing = 5;
+const text = "sdfkjsdkfjd";
+
+votesInteresting = votesInteresting + 1;
+
+let votesFalse = 4;
+const isCorrect = votesFalse < totalUpvotes;
+
+Section 36: Functions
+parseInt("24.533ccc");
+
+function calcFactAge(year){
+    const currentYear = 2022;
+   
+    // to get actual current year always accurate
+    const currentYear = new Date().getFullYear();
+    
+    const age = currentYear - year;
+    return age;
+}
+
+const age1 = calcFactAge(2015)
