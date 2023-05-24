@@ -97,3 +97,12 @@ const totalupvotes = votesInteresting+ votesMindblowing
 
 const message = totalUpvotes > votesFalse ? "The fact is true" : "the fact might be false"
 
+Section 39: working with strings
+const text = "libson..."
+const upperText = text.toUpperCase();
+console.log(upperText);
+
+back ticks allow you to be able to print out variables into strings
+const str = `the current fact is ${text} it is ${calcFactAge(2015)}
+ years old. it is probably ${totalUpvotes > votesFalse ? "correct" : "not true"}`;
+

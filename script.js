@@ -18,5 +18,5 @@ function calcFactAge(year) {
   const age = currentYear - year;
 
   if (age >= 0) return age;
-  else return "Impossible Year";
+  else return `Impossible Year. Year needs to be less or equal ${currentYear}`;
 }
