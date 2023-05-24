@@ -90,3 +90,10 @@ else {
 
 falsy values: O, "", null, undefined
 truthy value: everything else
+
+Section 38: ternary Operators
+let votesFalse = 7;
+const totalupvotes = votesInteresting+ votesMindblowing
+
+const message = totalUpvotes > votesFalse ? "The fact is true" : "the fact might be false"
+
