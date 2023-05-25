@@ -21,7 +21,7 @@ function calcFactAge(year) {
   else return `Impossible Year. Year needs to be less or equal ${currentYear}`;
 }
 
-const age1 = calcFactAge(2015);
+/*const age1 = calcFactAge(2015);
 console.log(age1);
 console.log(calcFactAge(2020));
 console.log(calcFactAge(2037));
@@ -31,7 +31,19 @@ const calcFactAge2 = (year) =>
     ? new Date().getFullYear() - year
     : `Impossible year. Year needs to be less or equal ${new Date().getFullYear()}`;
 console.log(calcFactAge(2015));
-console.log(calcFactAge2(2037));
+console.log(calcFactAge2(2037));*/
 
 // array can mix all sorts of data
-//const fact = ["Lisbon is the capital of Portugal", 2015, true];
+const fact = ["Lisbon is the capital of Portugal", 2015, true];
+console.log(fact);
+console.log(fact[0]);
+console.log(fact.length);
+console.log(fact[fact.length - 1]);
+
+const [text, createdIn] = fact;
+console.log(createdIn);
+
+// ... is called threading to put the
+// entire orginal array into the new one
+const newFact = [...fact, "society"];
+console.log(newFact);
