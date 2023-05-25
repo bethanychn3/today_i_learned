@@ -20,3 +20,18 @@ function calcFactAge(year) {
   if (age >= 0) return age;
   else return `Impossible Year. Year needs to be less or equal ${currentYear}`;
 }
+
+const age1 = calcFactAge(2015);
+console.log(age1);
+console.log(calcFactAge(2020));
+console.log(calcFactAge(2037));
+
+const calcFactAge2 = (year) =>
+  year <= new Date().getFullYear()
+    ? new Date().getFullYear() - year
+    : `Impossible year. Year needs to be less or equal ${new Date().getFullYear()}`;
+console.log(calcFactAge(2015));
+console.log(calcFactAge2(2037));
+
+// array can mix all sorts of data
+//const fact = ["Lisbon is the capital of Portugal", 2015, true];
