@@ -43,6 +43,8 @@ const CATEGORIES = [
   { name: "news", color: "#8b5cf6" },
 ];
 
+//console.log(CATEGORIES.find((cat) => cat.name === "society").color);
+
 const btn = document.querySelector(".btn-open");
 const form = document.querySelector(".fact-form");
 const factsList = document.querySelector(".facts-list");
@@ -65,6 +67,8 @@ async function loadFacts() {
     }
   );
   const data = await res.json();
+  //console.log(data);
+  //const filteredData = data.filter((fact) => fact.category === "technology");
   createFactslist(data);
   //console.log(data);
 }
@@ -81,7 +85,9 @@ function createFactslist(dataArray) {
           target="_blank"
           >(Source)</a>
       </p>
-      <span class="tag" style="background-color: #3b82f6"
+      <span class="tag" style="background-color: ${
+        CATEGORIES.find((cat) => cat.name === fact.category).color
+      }"
         >${fact.category}</span>
     </li>`
   );
@@ -100,6 +106,9 @@ btn.addEventListener("click", function () {
     btn.textContent = "Share a Fact";
   }
 });
+
+console.log([7, 64, 6, -23, 11].filter((el) => el > 10));
+console.log([7, 64, 6, -23, 11].find((el) => el > 10));
 
 /*function calcFactAge(year) {
   const currentYear = new Date().getFullYear();
