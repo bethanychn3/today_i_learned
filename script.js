@@ -49,9 +49,28 @@ const factsList = document.querySelector(".facts-list");
 
 // Create Dom elements: render facts in list
 factsList.innerHTML = "";
-createFactslist(initialFacts);
-createFactslist([{ text: "jonas" }]); // independent now
 
+//Load data from Supabase
+loadFacts();
+async function loadFacts() {
+  const res = await fetch(
+    "https://mpssiycqhabtjoeqjbfj.supabase.co/rest/v1/facts",
+    {
+      headers: {
+        apikey:
+          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1wc3NpeWNxaGFidGpvZXFqYmZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ3MDI4MTgsImV4cCI6MjAwMDI3ODgxOH0.d5hIX7lYpiL5qhf4-KFU-pFCobtk0oln7bZJF3_B-uQ",
+        authorization:
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1wc3NpeWNxaGFidGpvZXFqYmZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ3MDI4MTgsImV4cCI6MjAwMDI3ODgxOH0.d5hIX7lYpiL5qhf4-KFU-pFCobtk0oln7bZJF3_B-uQ",
+      },
+    }
+  );
+  const data = await res.json();
+  createFactslist(data);
+  //console.log(data);
+}
+
+createFactslist(initialFacts);
+//createFactslist([{ text: "jonas" }]); // independent now
 function createFactslist(dataArray) {
   const htmlArr = dataArray.map(
     (fact) => `<li class="fact">${fact.text}
