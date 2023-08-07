@@ -106,3 +106,4 @@ back ticks allow you to be able to print out variables into strings
 const str = `the current fact is ${text} it is ${calcFactAge(2015)}
  years old. it is probably ${totalUpvotes > votesFalse ? "correct" : "not true"}`;
 
+8.7.23 added a test commit to find out progress
