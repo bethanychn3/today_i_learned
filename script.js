@@ -2,6 +2,9 @@ console.log("Hello World!");
 
 const btn = document.querySelector(".btn-open");
 const form = document.querySelector(".fact-form");
+const factsList = document.querySelector(".facts-list");
+
+factsList.innerHTML = "";
 
 btn.addEventListener("click", function () {
   if (form.classList.contains("hidden")) {
@@ -13,13 +16,13 @@ btn.addEventListener("click", function () {
   }
 });
 
-function calcFactAge(year) {
+/*function calcFactAge(year) {
   const currentYear = new Date().getFullYear();
   const age = currentYear - year;
 
   if (age >= 0) return age;
   else return `Impossible Year. Year needs to be less or equal ${currentYear}`;
-}
+}*/
 
 /*const age1 = calcFactAge(2015);
 console.log(age1);
@@ -34,7 +37,7 @@ console.log(calcFactAge(2015));
 console.log(calcFactAge2(2037));*/
 
 // array can mix all sorts of data
-const fact = ["Lisbon is the capital of Portugal", 2015, true];
+/*const fact = ["Lisbon is the capital of Portugal", 2015, true];
 console.log(fact);
 console.log(fact[0]);
 console.log(fact.length);
@@ -55,7 +58,7 @@ console.log(newFact);
 /*const times10 = [2, 4, 6, 8].map(function (el) {
   return el * 10;
 });*/
-const times10 = [2, 4, 6, 8].map((el) => el * 10);
+/*const times10 = [2, 4, 6, 8].map((el) => el * 10);
 
 console.log(times10);
 
@@ -129,3 +132,4 @@ console.log(factObj["text"]);
 const { category, isCorrect } = factObj;
 console.log(category);
 console.log(factObj.createSummary());
+*/
